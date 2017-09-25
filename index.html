@@ -158,18 +158,24 @@
       </div>
     </footer>
     <div class="modal  cart-modal">
-      <b class="cart-modal__heading-text">Добавить в корзину</b>
-      <p class="cart-modal__action-text">
-        Выберите размер:
-      </p>
-      <div class="cart-modal__size-select">
-        <span class="cart-modal__size-button">S</span>
-        <span class="cart-modal__size-button">M</span>
-        <span class="cart-modal__size-button">L</span>
-      </div>
-      <div class="cart-modal__button-wrapper">
-        <button class="button  cart-modal__button" type="button">Добавить</button>
-      </div>
+      <form class="cart-modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <input class="cart-modal__product-id" type="hidden" name="product_id" value="#">
+        <b class="cart-modal__heading-text">Добавить в корзину</b>
+        <p class="cart-modal__action-text">
+          Выберите размер:
+        </p>
+        <div class="cart-modal__size-select">
+          <input class="cart-modal__input" type="radio" name="size" id="small" value="small">
+          <label class="cart-modal__size-button" for="small">S</label>
+          <input class="cart-modal__input" type="radio" name="size" id="medium" value="medium">
+          <label class="cart-modal__size-button" for="medium">M</label>
+          <input class="cart-modal__input" type="radio" name="size" id="large" value="large">
+          <label class="cart-modal__size-button" for="large">L</label>
+        </div>
+        <div class="cart-modal__button-wrapper">
+          <button class="button  cart-modal__button" type="submit">Добавить</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
