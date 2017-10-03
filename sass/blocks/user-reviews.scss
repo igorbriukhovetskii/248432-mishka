@@ -1,0 +1,76 @@
+.user-reviews {
+  position: relative;
+  padding: 10px 30px 51px 29px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: transparent url("../../img/zigzag-line.png") repeat-x bottom;
+  }
+}
+
+.user-reviews__review {
+  padding-left: 1px;
+  margin-bottom: 30px;
+}
+
+.user-reviews__heading {
+  color: $text-dark;
+  font-family: $font-bold;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 12px;
+}
+
+.user-reviews__user-text {
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 24px;
+}
+
+.user-reviews__user-name {
+  color: $text-dark;
+  font-family: $font-bold;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  margin-top: 27px;
+  margin-bottom: 3px;
+}
+
+.user-reviews__user-mail {
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.user-reviews__pagination {
+  display: flex;
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+.user-reviews__pagination-button {
+  width: 50%;
+  height: 52px;
+  background: none;
+  border: 1px solid $grey;
+  cursor: pointer;
+}
+
+.user-reviews__button-wrapper {
+  margin-top: 0;
+}
+
+.user-reviews__button {
+  width: 100%;
+  padding-top: 0.8em;
+  padding-bottom: 0.85em;
+  letter-spacing: 0.03em;
+}

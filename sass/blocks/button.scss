@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 0.8em 1.5em 0.85em 1.5em;
+  color: $text-grey;
+  font-family: $font-bold;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid $dark-grey;
+}

@@ -1,0 +1,26 @@
+.products__item {
+  display: block;
+  width: 100%;
+}
+
+.products__link {
+  display: block;
+  width: 100%;
+  padding-left: 29px;
+  padding-right: 140px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  font-family: $font-bold;
+  color: $text-light;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.products__link--lighter {
+  background-color: #63d1bb;
+}
+
+.products__link--darker {
+  background-color: #56c3b2;
+}
