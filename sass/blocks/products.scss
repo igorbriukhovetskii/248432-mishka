@@ -6,14 +6,10 @@
 .products__link {
   display: block;
   width: 100%;
-  padding-left: 29px;
-  padding-right: 140px;
-  padding-top: 26px;
-  padding-bottom: 29px;
+  padding: 26px 140px 29px 29px;
   font-family: $font-bold;
   color: $text-light;
   font-size: 19px;
-  font-weight: 700;
   line-height: 24px;
 }
 
