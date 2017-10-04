@@ -1,0 +1,154 @@
+.custom-order {
+  padding: 0 30px;
+}
+
+.custom-order__intro {
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.custom-order__fields-title {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 27px;
+  margin-bottom: 24px;
+  color: $salad;
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-left: 25px;
+    width: 100%;
+    height: 1px;
+    background: $salad;
+  }
+}
+
+.custom-order__fields-title--name {
+  margin-bottom: 30px;
+}
+
+.custom-order__fields-title--phone {
+  margin-bottom: 6px;
+}
+
+.custom-order__fields-title--mail {
+  margin-bottom: 7px;
+}
+
+.custom-order__fields-set {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 34px;
+  border: none;
+}
+
+.custom-order__fields-set--type {
+  margin-bottom: 29px;
+}
+
+.custom-order__fields-set--addition {
+  margin-bottom: 0;
+}
+
+.custom-order__fields-item {
+  min-height: 39px;
+  margin-bottom: 22px;
+}
+
+.custom-order__fields-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.custom-order__fields-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-order__label {
+  display: block;
+  color: $text-dark;
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.custom-order__label--radio {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 62px;
+  margin-bottom: 14px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: black;
+  }
+}
+
+.custom-order__label--checkbox {
+  position: relative;
+  display: inline-block;
+  padding-top: 13px;
+  padding-left: 64px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 39px;
+    background-color: black;
+  }
+}
+
+.custom-order__input-field {
+  display: block;
+  width: 100%;
+  height: 51px;
+  padding-top: 0.85em;
+  padding-right: 2.5em;
+  padding-bottom: 1.15em;
+}
+
+.custom-order__input-field--textarea {
+  display: block;
+  padding-left: 0.9em;
+  min-height: 140px;
+  margin-bottom: 3px;
+}
+
+.custom-order__info-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.custom-order__button-wrapper {
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.custom-order__button {
+  width: 100%;
+}
