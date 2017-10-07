@@ -1,0 +1,22 @@
+.products__item {
+  display: block;
+  width: 100%;
+}
+
+.products__link {
+  display: block;
+  width: 100%;
+  padding: 26px 140px 29px 29px;
+  font-family: $font-bold;
+  color: $text-light;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.products__link--lighter {
+  background-color: #63d1bb;
+}
+
+.products__link--darker {
+  background-color: #56c3b2;
+}

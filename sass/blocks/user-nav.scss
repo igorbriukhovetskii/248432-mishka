@@ -1,0 +1,21 @@
+.user-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-nav__item {
+  width: 100%;
+  height: 78px;
+  border-top: 1px solid $grey;
+}
+
+.user-nav__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 1.65em 1em 1.75em 4.47em;
+  font-family: $font-bold;
+  font-size: 17px;
+  color: $text-dark;
+}

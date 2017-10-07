@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 62px 27px 57px;
+}
+
+.social__link {
+  background: black;
+}
+
+.social__link--instagram {
+  width: 22px;
+  height: 21px;
+  margin-bottom: 3px;
+}
+
+.social__link--facebook {
+  width: 15px;
+  height: 29px;
+}
+
+.social__link--twitter {
+  width: 24px;
+  height: 20px;
+  margin-bottom: 3px;
+}
