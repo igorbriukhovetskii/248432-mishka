@@ -1,7 +1,19 @@
 .logo {
   font-size: 0;
   display: inline-block;
-  margin: 21px 118px 22px 116px;
+  margin: 22px 118px 22px 116px;
   width: 86px;
   height: 35px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 0;
+    left: 50px;
+    top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

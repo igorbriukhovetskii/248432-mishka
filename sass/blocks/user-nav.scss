@@ -6,16 +6,49 @@
 
 .user-nav__item {
   width: 100%;
-  height: 78px;
-  border-top: 1px solid $grey;
+  box-shadow: inset 0 1px 0 0 $grey;
+  font-family: $font-bold;
+  font-size: 17px;
+  color: $text-dark;
+  line-height: 24px;
 }
 
 .user-nav__link {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 1.65em 1em 1.75em 4.47em;
-  font-family: $font-bold;
-  font-size: 17px;
-  color: $text-dark;
+  padding: 1.56em 1em 1.65em 4.47em;
+  font: inherit;
+  color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .user-nav__search {
+    padding: 0;
+    width: 84px;
+    box-shadow: inset 1px 0 0 0 $grey,
+      inset -1px 0 0 0 $grey;
+  }
+
+  .user-nav__cart {
+    min-width: 314px;
+    padding: 1.83em 1em 1.95em 4.77em;
+    letter-spacing: 0.01em;
+  }
+
+  .user-nav__text-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav__cart {
+    letter-spacing: normal;
+  }
 }

@@ -2,33 +2,49 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка | Главная страница</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header  container">
-      <a class="logo">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
-      </a>
-      <nav class="main-nav  main-nav--open">
-        <ul class="main-nav__items">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="user-nav">
-          <li class="user-nav__item">
-            <a class="user-nav__search  user-nav__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__cart  user-nav__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__top">
+        <a class="logo">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__search  user-nav__link" href="#" aria-label="Поиск по сайту"><span class="user-nav__text-wrapper">Поиск по сайту</span></a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__cart  user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="page-header__bottom">
+        <nav class="secondary-nav">
+          <ul class="secondary-nav__items">
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link">Новые поступления</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link">Распродажа</a>
+            </li>
+          </ul>
+          <div class="secondary-nav__delivery">
+            <a class="secondary-nav__link  secondary-nav__link--delivery">Бесплатная доставка по России</a>
+          </div>
+        </nav>
         <h1 class="page-header__heading">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
     </header>
