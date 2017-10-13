@@ -3,4 +3,9 @@
   height: 457px;
   margin-bottom: 39px;
   background: #e6e2db url("../img/map-mobile@1x.jpg") no-repeat center;
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 457px;
+  }
 }

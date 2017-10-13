@@ -1,0 +1,24 @@
+.company-info {
+  position: relative;
+  display: block;
+  margin-bottom: 39px;
+  padding-bottom: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .company-info {
+    margin-bottom: 57px;
+    padding-bottom: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-info {
+    display: flex;
+    flex-direction: row;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding-left: 49px;
+    padding-right: 51px;
+  }
+}
