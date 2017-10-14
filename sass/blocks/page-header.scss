@@ -7,7 +7,7 @@
   background: #f5f5f5 url("../img/hero-mobile@1x.jpg") no-repeat center -19px;
 }
 
-.page-header__bottom--inner {
+.page-header__bottom--inner-page {
   background: #f1f1f1 none;
   margin-bottom: 22px;
 }
@@ -42,6 +42,10 @@
     padding: 0 49px;
   }
 
+  .page-header__bottom--inner-page {
+    margin-bottom: 80px;
+  }
+
   .page-header__heading {
     font-size: 43px;
     line-height: 50px;
@@ -60,6 +64,11 @@
     min-height: 626px;
   }
 
+  .page-header__bottom--inner-page {
+    min-height: 254px;
+    margin-bottom: 129px;
+  }
+
   .page-header__heading {
     font-size: 53px;
     line-height: 57px;
@@ -69,6 +78,7 @@
   }
 
   .page-header__heading--inner-page {
+    margin-top: 53px;
     padding-bottom: 101px;
   }
 }
