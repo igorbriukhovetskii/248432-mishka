@@ -31,7 +31,7 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__bottom  page-header__bottom--inner">
+      <div class="page-header__bottom  page-header__bottom--inner-page">
         <nav class="secondary-nav">
           <ul class="secondary-nav__items">
             <li class="secondary-nav__item">
@@ -48,96 +48,102 @@
         <h1 class="page-header__heading  page-header__heading--inner-page">Вязание на заказ</h1>
       </div>
     </header>
-    <main class="main-content">
-      <form class="custom-order" action="https://echo.htmlacademy.ru" method="post">
-        <p class="custom-order__intro">
-          Мы будем рады воплотить в жизнь ваши пожелания!
-          Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-        </p>
-        <fieldset class="custom-order__fields-set  custom-order__fields-set--type">
-          <legend class="custom-order__fields-title">Тип</legend>
-          <ul class="custom-order__fields-list">
-            <li class="custom-oder__fields-item">
-              <input class="custom-order__radio  screen-readers-only" type="radio" id="interior" name="type" value="interior-accessory" checked>
-              <label class="custom-order__label  custom-order__label--radio" for="interior">Аксессуар для интерьера</label>
+    <main class="main-content  order">
+      <p class="order__intro">
+        Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+      <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="order__group  order__group--type">
+          <legend class="order__title  order__title--type">Тип</legend>
+          <ul class="order__fields-set  order__fields-set--type">
+            <li class="oder__field  order__field--type">
+              <input class="order__radio  screen-readers-only" type="radio" id="interior" name="type" value="interior-accessory" checked>
+              <label class="order__label  order__label--radio" for="interior">Аксессуар для интерьера</label>
             </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__radio  screen-readers-only" type="radio" id="toy" name="type" value="toy">
-              <label class="custom-order__label  custom-order__label--radio" for="toy">Детская игрушка</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="custom-order__fields-set">
-          <legend class="custom-order__fields-title">Цвет</legend>
-          <ul class="custom-order__fields-list  color">
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-white" name="color" value="white" checked>
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-white">Белый</label>
-            </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-grey" name="color" value="grey" checked>
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-grey">Серый</label>
-            </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-tiffany" name="color" value="tiffany">
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-tiffany">«Тиффани»</label>
-            </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-black" name="color" value="black">
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-black">Черный</label>
-            </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-rose" name="color" value="rose">
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-rose">Розовый</label>
-            </li>
-            <li class="custom-order__fields-item">
-              <input class="custom-order__checkbox  screen-readers-only" type="checkbox" id="color-orange" name="color" value="orange">
-              <label class="custom-order__label  custom-order__label--checkbox" for="color-orange">Оранжевый</label>
+            <li class="order__field  order__field--type">
+              <input class="order__radio  screen-readers-only" type="radio" id="toy" name="type" value="toy">
+              <label class="order__label  order__label--radio" for="toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="custom-order__fields-set">
-          <legend class="custom-order__fields-title  custom-order__fields-title--name">ФИО</legend>
-          <ul class="custom-order__fields-list">
-            <li class="custom-order__fields-item">
-              <label class="custom-order__label" for="first-name">Имя:</label>
-              <input class="input-field  custom-order__input-field" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+        <fieldset class="order__group  order__group--color">
+          <legend class="order__title  order__title--color">Цвет</legend>
+          <ul class="order__fields-set  order__fields-set--color">
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-white" name="color" value="white" checked>
+              <label class="order__label  order__label--checkbox" for="color-white">Белый</label>
             </li>
-            <li class="custom-order__fields-item">
-              <label class="custom-order__label" for="second-name">Фамилия:</label>
-              <input class="input-field  custom-order__input-field" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию*" required>
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-grey" name="color" value="grey" checked>
+              <label class="order__label  order__label--checkbox" for="color-grey">Серый</label>
             </li>
-            <li class="custom-order__fields-item">
-              <label class="custom-order__label" for="middle-name">Отчество:</label>
-              <input class="input-field  custom-order__input-field" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-tiffany" name="color" value="tiffany">
+              <label class="order__label  order__label--checkbox" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-black" name="color" value="black">
+              <label class="order__label  order__label--checkbox" for="color-black">Черный</label>
+            </li>
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-rose" name="color" value="rose">
+              <label class="order__label  order__label--checkbox" for="color-rose">Розовый</label>
+            </li>
+            <li class="order__field  order__field--color">
+              <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-orange" name="color" value="orange">
+              <label class="order__label  order__label--checkbox" for="color-orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="custom-order__fields-set">
-          <legend class="custom-order__fields-title  custom-order__fields-title--phone">Тел</legend>
-          <label class="screen-readers-only" for="phone">Ваш номер телефона</label>
-          <input class="input-field  custom-order__input-field" type="tel" id="phone" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+        <fieldset class="order__group  order__group--name">
+          <legend class="order__title  order__title--name">ФИО</legend>
+          <ul class="order__fields-set  order__fields-set--name">
+            <li class="order__field  order__field--name">
+              <label class="order__label" for="first-name">Имя:</label>
+              <input class="input-field  order__input-field  order__input-field--name" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="order__field  order__field--name">
+              <label class="order__label" for="second-name">Фамилия:</label>
+              <input class="input-field  order__input-field  order__input-field--name" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="order__field  order__field--name">
+              <label class="order__label" for="middle-name">Отчество:</label>
+              <input class="input-field  order__input-field  order__input-field--name" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="custom-order__fields-set">
-          <legend class="custom-order__fields-title  custom-order__fields-title--mail">E-mail</legend>
-          <label class="screen-readers-only" for="email">Ваш e-mail</label>
-          <input class="input-field  custom-order__input-field" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+        <fieldset class="order__group  order__group--contacts">
+          <legend class="screen-readers-only">Ваш номер телефона и e-mail</legend>
+          <ul class="order__fields-set  order__fields-set--contacts">
+            <li class="order__field  order__field--contacts">
+              <label class="order__title  order__title--phone" for="phone">Тел</label>
+              <input class="input-field  order__input-field  order__input-field--contacts" type="tel" id="phone" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+            </li>
+            <li class="order__field  order__field--contacts">
+              <label class="order__title  order__title--mail" for="email">E-mail</label>
+              <input class="input-field  order__input-field  order__input-field--contacts" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="custom-order__fields-set  custom-order__fields-set--addition">
-          <legend class="custom-order__fields-title">Доп</legend>
+        <fieldset class="order__group  order__group--extra">
+          <legend class="order__title  order__title--extra">Доп</legend>
           <label class="screen-readers-only" for="user-message">Ваши пожелания к заказу</label>
-          <textarea class="custom-order__input-field  custom-order__input-field--textarea  input-field  input-field--textarea" cols="40" rows="5"
+          <textarea class="input-field  input-field--textarea  order__input-field  order__input-field--extra" cols="40" rows="5"
                     id="user-message" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <p class="custom-order__info-text">
-          *Поля обязательны для заполнения
-        </p>
-        <div class="custom-order__button-wrapper">
-          <button class="button  custom-order__button" type="submit">Отправить заказ</button>
+        <div class="order__send">
+          <p class="order__info">
+            *Поля обязательны для заполнения
+          </p>
+          <button class="button  order__button" type="submit">Отправить заказ</button>
         </div>
       </form>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="http://lorempixel.com/102/34/cats" width="102" height="34" alt="Логотип магазина Мишка">
+      </div>
       <div class="social">
         <a class="social__link  social__link--instagram" href="https://instagram.com">
           <span class="screen-readers-only">Мы в Инстаграме</span>

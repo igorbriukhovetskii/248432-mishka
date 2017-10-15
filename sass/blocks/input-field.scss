@@ -18,3 +18,15 @@
   box-shadow: inset -2px -2px 0 0 $text-dark,
     inset 2px 2px 0 0 $text-dark;
 }
+
+@media (min-width: $tablet-width) {
+  .input-field {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
