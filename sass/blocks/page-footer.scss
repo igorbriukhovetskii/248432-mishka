@@ -2,3 +2,26 @@
   padding: 0 30px;
   background-color: #f2f2f2;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 51px 50px 49px 50px;
+  }
+
+  .page-footer__logo {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 49px 50px 51px 50px;
+  }
+}

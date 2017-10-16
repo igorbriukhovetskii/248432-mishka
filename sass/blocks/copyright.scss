@@ -23,3 +23,25 @@
   line-height: 18px;
   margin-top: 7px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-left: 83px;
+    padding: 0;
+    padding-top: 6px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .copyright__text {
+    margin-right: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-left: 272px;
+  }
+}

@@ -6,12 +6,14 @@
   width: 320px;
   padding: 0 30px;
   background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
 }
 
 .cart-modal__heading {
   display: block;
   margin-top: 31px;
-  margin-bottom: 22px;
+  margin-bottom: 13px;
   color: $text-dark;
   font-family: $font-bold;
   font-size: 25px;
@@ -22,6 +24,8 @@
 
 .cart-modal__action {
   display: block;
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 15px;
   line-height: 30px;
   text-align: center;
@@ -52,7 +56,36 @@
 
 .cart-modal__button {
   width: 100%;
-  margin-bottom: 43px;
+  margin-bottom: 41px;
   border-color: transparent;
   background-color: $salad;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .cart-modal {
+    margin: 0 auto;
+    width: 566px;
+    padding: 0 105px;
+  }
+
+  .cart-modal__heading {
+    margin-top: 34px;
+    margin-bottom: 13px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .cart-modal__action {
+    margin-bottom: 21px;
+    font-size: 17px;
+  }
+
+  .cart-modal__size-button {
+    width: 112px;
+  }
+
+  .cart-modal__button {
+    margin-bottom: 44px;
+  }
 }

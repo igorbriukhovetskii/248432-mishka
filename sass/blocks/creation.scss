@@ -1,0 +1,124 @@
+.creation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 59px 30px;
+  padding-top: 97px;
+  box-shadow: inset 1px 1px 0 0 #eeeeee,
+    inset -1px -1px 0 0 #eeeeee;
+}
+
+.creation__heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 25px 40px 24px 90px;
+  color: $text-dark;
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.creation__content-wrapper {
+  display: block;
+}
+
+.creation__video {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 3px;
+  background: #a0aea9 url("../img/video-mobile@1x.jpg") no-repeat center;
+}
+
+.creation__description {
+  padding: 0 35px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.creation__button-wrapper {
+  padding: 0 34px 32px 34px;
+}
+
+.creation__button {
+  margin: 0 34px 32px 34px;
+  padding-left: 1.4em;
+  padding-right: 1.41em;
+}
+
+@media (min-width: $tablet-width) {
+  .creation {
+    margin: 0 50px 64px;
+    padding-top: 0;
+  }
+
+  .creation__video {
+    width: 668px;
+    height: 455px;
+    margin-bottom: 13px;
+  }
+
+  .creation__heading {
+    position: static;
+    padding-left: 106px;
+    font-size: 20px;
+  }
+
+  .creation__content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .creation__description {
+    margin-top: 8px;
+    margin-bottom: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .creation__button {
+    margin: 0 42px 45px 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .creation {
+    flex-direction: row;
+    margin-bottom: 105px;
+  }
+
+  .creation__video {
+    width: 682px;
+    margin-bottom: 0;
+  }
+
+  .creation__content-wrapper {
+    margin-left: auto;
+    width: 230px;
+    margin-right: 59px;
+    margin-top: 46px;
+    padding-top: 26px;
+  }
+
+  .creation__heading {
+    padding: 24px 0 25px;
+  }
+
+  .creation__description {
+    margin-bottom: 46px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .creation__button {
+    width: 230px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
