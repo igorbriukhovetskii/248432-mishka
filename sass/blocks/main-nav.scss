@@ -1,9 +1,14 @@
 .main-nav {
+  display: block;
+}
+
+.main-nav ul {
   display: none;
 }
 
-.main-nav--open {
-  display: block;
+.main-nav--opened ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__items {
@@ -37,6 +42,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .main-nav ul,
+  .main-nav--opened ul {
+    display: flex;
+    flex-direction: row;
   }
 
   .main-nav__items {
