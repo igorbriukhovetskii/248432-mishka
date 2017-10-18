@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+		<symbol id="icon-menu-close" viewBox="0 0 20.514 20.512">
+			<path fill="#231F20" d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z"></path>
+		</symbol>
+	
+		<symbol id="icon-menu-open" viewBox="0 0 19.958 14">
+			<path fill="#231F20" d="M0 0h19.958v2H0zM0 6h19.958v2H0zM0 12h19.958v2H0z"></path>
+		</symbol>
+	
+</svg>

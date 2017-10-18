@@ -25,7 +25,9 @@
   .user-nav {
     display: flex;
     flex-direction: row;
-    margin-left: 370px;
+    width: 75%;
+    margin-left: auto;
+    justify-content: flex-end;
   }
 
   .user-nav__item {
@@ -52,10 +54,11 @@
 
 @media (min-width: $desktop-width) {
   .user-nav {
-    margin-left: 288px;
+    width: auto;
   }
 
   .user-nav__cart {
+    min-width: 316px;
     letter-spacing: normal;
   }
 }
