@@ -24,6 +24,12 @@
   margin-top: 7px;
 }
 
+.copyright__link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin-left: 83px;
@@ -43,5 +49,6 @@
 @media (min-width: $desktop-width) {
   .copyright {
     margin-left: 272px;
+    padding-top: 8px;
   }
 }

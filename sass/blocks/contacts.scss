@@ -12,6 +12,10 @@
   line-height: 30px;
 }
 
+.contacts__icon {
+  display: none;
+}
+
 .contacts__info {
   font-size: 15px;
   line-height: 30px;
@@ -65,7 +69,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 36px;
-    padding-bottom: 17px;
+    padding-bottom: 19px;
     padding-left: 46px;
   }
 
@@ -74,16 +78,15 @@
     margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: -12px;
-      right: 23px;
-      width: 47px;
-      height: 81px;
-      background-color: $salad;
-    }
+  .contacts__icon {
+    position: absolute;
+    display: block;
+    top: -14px;
+    right: 23px;
+    width: 47px;
+    height: 81px;
   }
 
   .contacts__info {
@@ -143,11 +146,12 @@
     margin-bottom: 48px;
     font-size: 53px;
     line-height: 57px;
+  }
 
-    &::after {
-      top: -9px;
-      left: -105px;
-    }
+  .contacts__icon {
+    top: -9px;
+    right: auto;
+    left: -106px;
   }
 
   .contacts__info {

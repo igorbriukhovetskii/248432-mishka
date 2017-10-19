@@ -7,7 +7,7 @@
 }
 
 .social__link {
-  background: black;
+  display: inline-block;
 }
 
 .social__link--instagram {
@@ -31,7 +31,7 @@
   .social {
     margin-left: 159px;
     padding: 0;
-    padding-bottom: 8px;
+    padding-bottom: 26px;
     min-width: 141px;
   }
 }
@@ -39,6 +39,7 @@
 @media (min-width: $desktop-width) {
   .social {
     margin-left: 350px;
+    padding-bottom: 24px;
     min-width: 142px;
   }
 }

@@ -1,4 +1,5 @@
 .merchandise__item {
+  position: relative;
   display: block;
   width: 100%;
 }
@@ -13,12 +14,32 @@
   line-height: 24px;
 }
 
-.merchandise__link--lighter {
+.merchandise__link--interior {
   background-color: #63d1bb;
 }
 
-.merchandise__link--darker {
+.merchandise__link--toys {
   background-color: #56c3b2;
+}
+
+.merchandise__icon {
+  position: absolute;
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.merchandise__icon--interior {
+  top: 23px;
+  right: 36px;
+  width: 41px;
+  height: 62px;
+}
+
+.merchandise__icon--toy {
+  top: 20px;
+  right: 26px;
+  width: 61px;
+  height: 62px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +60,15 @@
     font-size: 20px;
     line-height: 30px;
     padding: 28px 140px 30px 36px;
+  }
+
+  .merchandise__icon--interior {
+    top: 30px;
+  }
+
+  .merchandise__icon--toy {
+    top: 31px;
+    right: 34px;
   }
 }
 
