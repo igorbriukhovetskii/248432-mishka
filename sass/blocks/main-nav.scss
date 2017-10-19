@@ -1,5 +1,6 @@
 .main-nav {
   display: block;
+  position: relative;
 }
 
 .main-nav ul {
@@ -9,6 +10,34 @@
 .main-nav--opened ul {
   display: flex;
   flex-direction: column;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main-nav__icon {
+  display: none;
+}
+
+.main-nav .main-nav__icon--hamburger {
+  display: block;
+}
+
+.main-nav--opened .main-nav__icon--hamburger {
+  display: none;
+}
+
+.main-nav--opened .main-nav__icon--cross {
+  display: block;
 }
 
 .main-nav__items {
@@ -48,6 +77,10 @@
   .main-nav--opened ul {
     display: flex;
     flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__items {
