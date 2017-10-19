@@ -51,8 +51,12 @@
 }
 
 .product__add-button {
+  padding: 0;
+  margin: 0;
   width: 21px;
   height: 19px;
+  background: transparent;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
