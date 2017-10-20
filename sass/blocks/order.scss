@@ -79,6 +79,30 @@
   margin-bottom: 22px;
 }
 
+.order__field-wrapper {
+  position: relative;
+}
+
+.order__icon-phone {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  top: 10px;
+  right: 8px;
+}
+
+.order__icon-mail {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  right: 4px;
+}
+
+.order__field--color {
+  position: relative;
+}
+
 .order__field:last-of-type {
   margin-bottom: 0;
 }
@@ -102,6 +126,7 @@
   padding-top: 10px;
   padding-left: 62px;
   margin-bottom: 14px;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -111,8 +136,12 @@
     width: 39px;
     height: 39px;
     border-radius: 50%;
-    background-color: black;
+    border: 2px solid #444444;
   }
+}
+
+.order__radio:checked + .order__label--radio::after {
+  background: radial-gradient(circle at center, $salad 7px, transparent 8px);
 }
 
 .order__label--checkbox {
@@ -120,16 +149,29 @@
   display: inline-block;
   padding-top: 13px;
   padding-left: 64px;
+}
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 39px;
-    background-color: black;
-  }
+.order__tick {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444444;
+}
+
+.order__icon-tick {
+  display: none;
+  width: 22px;
+  height: 16px;
+}
+
+.order__checkbox:checked + .order__icon-tick {
+  display: block;
 }
 
 .order__input-field {
@@ -287,9 +329,13 @@
     padding-left: 80px;
 
     &::after {
-      width: 54px;
-      height: 54px;
+      width: 52px;
+      height: 52px;
     }
+  }
+
+  .order__radio:checked + .order__label--radio::after {
+    background: radial-gradient(circle at center, $salad 10px, transparent 11px);
   }
 
   .order__label--checkbox {
@@ -301,6 +347,26 @@
       width: 54px;
       height: 52px;
     }
+  }
+
+  .order__tick {
+    width: 54px;
+    height: 52px;
+  }
+
+  .order__icon-tick {
+    width: 33px;
+    height: 22px;
+  }
+
+  .order__icon-phone {
+    top: -5px;
+    right: 26px;
+  }
+
+  .order__icon-mail {
+    top: -5px;
+    right: 22px;
   }
 
   .order__input-field--extra {
@@ -383,6 +449,17 @@
   .order__input-field--extra {
     width: 700px;
   }
+
+  .order__icon-phone {
+    top: -6px;
+    right: 8px;
+  }
+
+  .order__icon-mail {
+    top: -5px;
+    right: 4px;
+  }
+
 
   .order__send {
     padding-left: 225px;
