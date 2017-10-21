@@ -1,3 +1,4 @@
+// Полифилл для внешних svg-спрайтов в ie
 !function(root, factory) {
   "function" == typeof define && define.amd ? // AMD. Register as an anonymous module unless amdModuleId is set
     define([], function() {
@@ -105,4 +106,141 @@
   return svg4everybody;
 });
 
+// Открытие/закрытие главного меню
+!function () {
+  var mainMenu = document.querySelector(".main-nav");
+  var menuToggle = mainMenu.querySelector(".main-nav__toggle");
+
+  if (mainMenu.classList.contains("main-nav--no-js")) {
+    mainMenu.classList.remove("main-nav--no-js");
+  }
+
+  var openMenu = function () {
+    mainMenu.classList.toggle("main-nav--opened");
+  };
+
+  var initializeMenu = function () {
+    menuToggle.addEventListener("click", openMenu);
+  };
+
+  return initializeMenu();
+}();
+
+// Google карта
+window.googleMapInit = function () {
+  // Контейнер карты
+  var mapContainer = document.querySelector(".map");
+  // Центр вьюпорта карты
+  var mapCenter = {lat: 59.938594, lng: 30.323083};
+  // Координаты маркера магазина
+  var mishka = {lat: 59.938594, lng: 30.323083};
+  var map;
+  var marker;
+
+  //Создание кастомного маркера
+  var setMarkers = function () {
+    var image = {
+      // Адрес иконки маркера
+      url: "../img/icon-map-pin.svg",
+      // Размеры маркера
+      size: new google.maps.Size(66, 100),
+      origin: new google.maps.Point(0, 0),
+      // Точка привязки маркера
+      anchor: new google.maps.Point(33, 100),
+      scaledSize: new google.maps.Size(66, 100)
+    };
+
+    marker = new google.maps.Marker({
+      position: mishka,
+      map: map,
+      icon: image,
+      optimized: false
+    });
+  };
+
+  // Инициализация карты
+  var initMap = function () {
+    map = new google.maps.Map(mapContainer, {
+      center: mapCenter,
+      zoom: 17,
+      // Отключение интерфейса по умолчанию
+      disableDefaultUI: true
+    });
+
+    setMarkers(map);
+
+    /**
+     * Обновление координат карты относительно вьюпорта при изменении размера
+     * контейнера карты. При этом центр карты сохраняет свою позицию относительно
+     * вьюпорта.
+     */
+    map.addListener("center_changed", function () {
+      map.panTo(mapCenter);
+    });
+  };
+
+  return initMap;
+}();
+
+// Модальное окно заказа товара
+window.modal = function () {
+  if (document.querySelector(".product__add-button")) {
+    var addButtons = document.querySelectorAll(".product__add-button");
+    var modal = document.querySelector(".modal");
+    var submitButton = modal.querySelector("button[type='submit']");
+    var ESC__KEYCODE = 27;
+
+    // Открытие модального окна
+    var openModal = function (event) {
+      event.preventDefault();
+      modal.classList.add("modal--show");
+      window.addEventListener("keydown", onEscPressed);
+      submitButton.addEventListener("click", closeModal);
+      modal.addEventListener("click", onOverlayClick);
+      for (var i = 0; i < addButtons.length; i++) {
+        addButtons[i].removeEventListener("click", openModal);
+      }
+    };
+
+    // Закрытие модального окна
+    var closeModal = function () {
+      modal.classList.remove("modal--show");
+      initModal();
+    };
+
+    // Закрытие модального окна при нажатии клавиши escape
+    var onEscPressed = function (event) {
+      if (event.keyCode === ESC__KEYCODE) {
+        closeModal();
+      }
+    };
+
+    // Закрытие модального окна при клике на оверлее, за пределами модального окна
+    var onOverlayClick = function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+
+    var initModal = function () {
+      window.removeEventListener("click", onEscPressed);
+      modal.removeEventListener("click", onOverlayClick);
+      submitButton.removeEventListener("click", closeModal);
+      for (var i = 0; i < addButtons.length; i++) {
+        addButtons[i].addEventListener("click", openModal)
+      }
+    };
+
+    return {
+      initModal: initModal
+    }
+  } else {
+    return -1;
+  }
+}();
+
 svg4everybody();
+
+if (document.querySelector(".product__add-button")) {
+  window.modal.initModal();
+}

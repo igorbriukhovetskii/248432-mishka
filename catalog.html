@@ -9,7 +9,7 @@
   <body class="container">
     <header class="page-header">
       <div class="page-header__top">
-        <nav class="main-nav  main-nav--opened">
+        <nav class="main-nav  main-nav--no-js  container">
           <button class="main-nav__toggle">
             <svg class="main-nav__icon  main-nav__icon--hamburger" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
@@ -210,7 +210,7 @@
         <div class="cart-modal__size-select">
           <input class="cart-modal__input  screen-readers-only" type="radio" name="size" id="small" value="small">
           <label class="cart-modal__size-button" for="small">S</label>
-          <input class="cart-modal__input  screen-readers-only" type="radio" name="size" id="medium" value="medium">
+          <input class="cart-modal__input  screen-readers-only" type="radio" name="size" id="medium" value="medium" checked>
           <label class="cart-modal__size-button" for="medium">M</label>
           <input class="cart-modal__input  screen-readers-only" type="radio" name="size" id="large" value="large">
           <label class="cart-modal__size-button" for="large">L</label>
@@ -218,5 +218,6 @@
         <button class="button  cart-modal__button" type="submit">Добавить</button>
       </form>
     </div>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
