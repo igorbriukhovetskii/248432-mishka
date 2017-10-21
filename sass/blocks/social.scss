@@ -10,6 +10,14 @@
   display: inline-block;
 }
 
+.social__link:hover .social__icon {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
+}
+
 .social__link--instagram {
   width: 22px;
   height: 21px;

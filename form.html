@@ -25,25 +25,25 @@
           </div>
           <ul class="main-nav__items">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              <a class="link  main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Вязание на заказ</a>
+              <a class="link  main-nav__link">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__search  user-nav__link" href="#" aria-label="Поиск по сайту">
+              <a class="link  user-nav__search  user-nav__link" href="#" aria-label="Поиск по сайту">
                 <span class="user-nav__text-wrapper">Поиск по сайту</span>
-                <svg class="user-nav__icon  user-nav__icon--search" width="18" height="19">
+                <svg class="link__icon  user-nav__icon  user-nav__icon--search" width="18" height="19">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
               </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__cart  user-nav__link" href="#">
+              <a class="link  user-nav__cart  user-nav__link" href="#">
                 Корзина: пока пуста
-                <svg class="user-nav__icon  user-nav__icon--cart" width="21" height="18">
+                <svg class="link__icon  user-nav__icon  user-nav__icon--cart" width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
               </a>
@@ -55,14 +55,14 @@
         <nav class="secondary-nav">
           <ul class="secondary-nav__items">
             <li class="secondary-nav__item">
-              <a class="secondary-nav__link">Новые поступления</a>
+              <a class="link  secondary-nav__link" href="#">Новые поступления</a>
             </li>
             <li class="secondary-nav__item">
-              <a class="secondary-nav__link">Распродажа</a>
+              <a class="link  secondary-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
           <div class="secondary-nav__delivery">
-            <a class="secondary-nav__link  secondary-nav__link--delivery">Бесплатная доставка по России</a>
+            <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
           </div>
         </nav>
         <h1 class="page-header__heading  page-header__heading--inner-page">Вязание на заказ</h1>
@@ -91,58 +91,70 @@
           <legend class="order__title  order__title--color">Цвет</legend>
           <ul class="order__fields-set  order__fields-set--color">
             <li class="order__field  order__field--color">
-              <span class="order__tick">
-                <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-white" name="color" value="white" checked>
-                <svg class="order__icon-tick" width="22" height="16">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </span>
-              <label class="order__label  order__label--checkbox" for="color-white">Белый</label>
+              <label class="order__label  order__label--checkbox" for="color-white">
+                Белый
+                <span class="order__tick">
+                  <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-white" name="color" value="white" checked>
+                  <svg class="order__icon-tick" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+              </label>
             </li>
             <li class="order__field  order__field--color">
-              <span class="order__tick">
-                <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-grey" name="color" value="grey" checked>
-                <svg class="order__icon-tick" width="22" height="16">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </span>
-              <label class="order__label  order__label--checkbox" for="color-grey">Серый</label>
+              <label class="order__label  order__label--checkbox" for="color-grey">
+                Серый
+                <span class="order__tick">
+                  <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-grey" name="color" value="grey" checked>
+                  <svg class="order__icon-tick" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+              </label>
             </li>
             <li class="order__field  order__field--color">
-              <span class="order__tick">
-                <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-tiffany" name="color" value="tiffany">
-                <svg class="order__icon-tick" width="22" height="16">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </span>
-              <label class="order__label  order__label--checkbox" for="color-tiffany">«Тиффани»</label>
+              <label class="order__label  order__label--checkbox" for="color-tiffany">
+                «Тиффани»
+                <span class="order__tick">
+                  <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-tiffany" name="color" value="tiffany">
+                  <svg class="order__icon-tick" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+              </label>
             </li>
             <li class="order__field  order__field--color">
-              <span class="order__tick">
-                <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-black" name="color" value="black">
-                <svg class="order__icon-tick" width="22" height="16">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </span>
-              <label class="order__label  order__label--checkbox" for="color-black">Черный</label>
+              <label class="order__label  order__label--checkbox" for="color-black">
+                Черный
+                <span class="order__tick">
+                  <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-black" name="color" value="black">
+                  <svg class="order__icon-tick" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+              </label>
             </li>
             <li class="order__field  order__field--color">
-              <span class="order__tick">
-                <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-rose" name="color" value="rose">
-                <svg class="order__icon-tick" width="22" height="16">
-                  <use xlink:href="img/sprite.svg#icon-tick"></use>
-                </svg>
-              </span>
-              <label class="order__label  order__label--checkbox" for="color-rose">Розовый</label>
+              <label class="order__label  order__label--checkbox" for="color-rose">
+                Розовый
+                <span class="order__tick">
+                  <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-rose" name="color" value="rose">
+                  <svg class="order__icon-tick" width="22" height="16">
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                  </svg>
+                </span>
+              </label>
             </li>
             <li class="order__field  order__field--color">
+              <label class="order__label  order__label--checkbox" for="color-orange">
+              Оранжевый
               <span class="order__tick">
                 <input class="order__checkbox  screen-readers-only" type="checkbox" id="color-orange" name="color" value="orange">
                 <svg class="order__icon-tick" width="22" height="16">
                   <use xlink:href="img/sprite.svg#icon-tick"></use>
                 </svg>
               </span>
-              <label class="order__label  order__label--checkbox" for="color-orange">Оранжевый</label>
+            </label>
             </li>
           </ul>
         </fieldset>

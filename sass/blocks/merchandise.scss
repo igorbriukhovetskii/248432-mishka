@@ -4,6 +4,22 @@
   width: 100%;
 }
 
+.merchandise__item--interior {
+  background-color: #63d1bb;
+}
+
+.merchandise__item--toys {
+  background-color: #56c3b2;
+}
+
+.merchandise__link:hover .merchandise__item--interior {
+  background-color: #59d5bc;
+}
+
+.merchandise__link:hover .merchandise__item--toys {
+  background-color: #46c1ae;
+}
+
 .merchandise__link {
   display: block;
   width: 100%;
@@ -12,6 +28,19 @@
   color: $text-light;
   font-size: 19px;
   line-height: 24px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    color: transparentize($text-light, 0.7);
+  }
+
+  &:active .merchandise__icon {
+    opacity: 0.3;
+  }
 }
 
 .merchandise__link--interior {

@@ -1,6 +1,5 @@
 .input-field {
   border: none;
-  //border-bottom: 2px solid $text-dark;
   box-shadow: inset 0 -2px 0 0 $text-dark;
   font: inherit;
   color: inherit;
@@ -12,11 +11,20 @@
     font-size: 17px;
     line-height: 18px;
   }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 0 $salad;
+  }
 }
 
 .input-field--textarea {
   box-shadow: inset -2px -2px 0 0 $text-dark,
     inset 2px 2px 0 0 $text-dark;
+
+  &:hover {
+    box-shadow: inset -2px -2px 0 0 $salad,
+    inset 2px 2px 0 0 $salad;
+  }
 }
 
 @media (min-width: $tablet-width) {

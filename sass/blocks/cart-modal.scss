@@ -50,8 +50,23 @@
   line-height: 16px;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: inset 2px 2px 0 0 $text-grey,
-    inset -2px -2px 0 0 $text-grey;
+  box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.9),
+    inset -2px -2px 0 0 transparentize($text-grey, 0.9);
+
+  &:hover {
+    box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.7),
+      inset -2px -2px 0 0 transparentize($text-grey, 0.7);
+  }
+
+  &:active {
+    box-shadow: inset 2px 2px 0 0 $salad,
+      inset -2px -2px 0 0 $salad;
+  }
+}
+
+.cart-modal__input:checked + .cart-modal__size-button {
+  box-shadow: inset 2px 2px 0 0 $salad,
+  inset -2px -2px 0 0 $salad;
 }
 
 .cart-modal__button {

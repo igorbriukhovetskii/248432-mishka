@@ -6,6 +6,14 @@
   padding-top: 97px;
   box-shadow: inset 1px 1px 0 0 #eeeeee,
     inset -1px -1px 0 0 #eeeeee;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .creation__heading {
@@ -44,6 +52,19 @@
   margin: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: 0.3s;
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: 0.1s;
+    opacity: 0.3;
+  }
 }
 
 .creation__content-wrapper {

@@ -30,6 +30,18 @@
   height: 34px;
 }
 
+.copyright__logo {
+  fill: $salad;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: #46c1ae;
+}
+
+.copyright__link:active .copyright__logo {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     margin-left: 83px;

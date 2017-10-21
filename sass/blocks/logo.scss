@@ -12,6 +12,14 @@
   justify-content: center;
   align-items: center;
   width: 86px;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
