@@ -20,7 +20,11 @@
           </button>
           <div class="logo">
             <a class="logo__link" href="index.html">
-              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+                <img src="img/logo/logo-mobile.svg" alt="Магазин вязанных вещей Мишка">
+              </picture>
             </a>
           </div>
           <ul class="main-nav__items">
