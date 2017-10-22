@@ -10,4 +10,13 @@
   border: 2px solid $dark-grey;
   background: none;
   cursor: pointer;
+
+  &:hover {
+    color: $text-light;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: transparentize($text-light, 0.7);
+  }
 }

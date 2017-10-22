@@ -53,11 +53,35 @@
 }
 
 .user-reviews__pagination-button {
+  position: relative;
   width: 50%;
   height: 52px;
   background: none;
   border: 1px solid $grey;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.user-reviews__icon {
+  position: absolute;
+  top: 12px;
+  width: 51px;
+  height: 26px;
+}
+
+.user-reviews__icon--left-arrow {
+  left: 38px;
+}
+
+.user-reviews__icon--right-arrow {
+  right: 40px;
 }
 
 .user-reviews__button {
@@ -122,6 +146,14 @@
     border-color: transparent;
   }
 
+  .user-reviews__icon--left-arrow {
+    left: 0;
+  }
+
+  .user-reviews__icon--right-arrow {
+    right: 0;
+  }
+
   .user-reviews__button {
     position: absolute;
     top: 79px;
@@ -136,10 +168,11 @@
 
 @media (min-width: $desktop-width) {
   .user-reviews {
-    margin-bottom: 71px;
+    margin-bottom: 69px;
     padding-top: 58px;
     padding-bottom: 150px;
     padding-left: 221px;
+    background: transparent url("../img/review@1x.jpg") no-repeat 50px 0;
   }
 
   .user-reviews__review {

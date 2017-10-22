@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 51px 50px 49px 50px;
+    padding: 51px 50px 52px 50px;
   }
 
   .page-footer__logo {
@@ -22,6 +22,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 49px 50px 51px 50px;
+    padding: 49px 50px 56px 50px;
   }
 }

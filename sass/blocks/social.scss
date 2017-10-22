@@ -7,7 +7,15 @@
 }
 
 .social__link {
-  background: black;
+  display: inline-block;
+}
+
+.social__link:hover .social__icon {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
 
 .social__link--instagram {
@@ -31,7 +39,7 @@
   .social {
     margin-left: 159px;
     padding: 0;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     min-width: 141px;
   }
 }
@@ -40,5 +48,6 @@
   .social {
     margin-left: 350px;
     min-width: 142px;
+    padding-bottom: 2px;
   }
 }
