@@ -11,6 +11,19 @@
   }
 }
 
+.content-wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 670px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1050px;
+  }
+}
+
 .screen-readers-only {
   position: absolute;
 

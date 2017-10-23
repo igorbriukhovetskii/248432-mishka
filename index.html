@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header  container" id="anchor-top">
+    <header class="page-header" id="anchor-top">
       <div class="page-header__top">
-        <nav class="main-nav  main-nav--no-js container">
+        <nav class="main-nav  main-nav--no-js  content-wrapper">
           <button class="main-nav__toggle">
             <svg class="main-nav__icon  main-nav__icon--hamburger" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
@@ -56,41 +56,43 @@
         </nav>
       </div>
       <div class="page-header__bottom">
-        <nav class="secondary-nav">
-          <ul class="secondary-nav__items">
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Новые поступления</a>
-            </li>
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <div class="secondary-nav__delivery">
-            <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
-          </div>
-        </nav>
-        <h1 class="page-header__heading">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+        <div class="content-wrapper">
+          <nav class="secondary-nav">
+            <ul class="secondary-nav__items">
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Новые поступления</a>
+              </li>
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <div class="secondary-nav__delivery">
+              <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
+            </div>
+          </nav>
+          <h1 class="page-header__heading">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+          <section class="merchandise">
+            <div class="merchandise__item  merchandise__item--interior">
+              <a class="merchandise__link  merchandise__link--interior" href="interior.html">
+                Предметы интерьера
+                <svg class="merchandise__icon  merchandise__icon--interior" width="41" height="62">
+                  <use xlink:href="img/sprite.svg#icon-interior"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="merchandise__item  merchandise__item--toys">
+              <a class="merchandise__link  merchandise__link--toys" href="toys.html">
+                Детские игрушки
+                <svg class="merchandise__icon  merchandise__icon--toy" width="61" height="61">
+                  <use xlink:href="img/sprite.svg#icon-toy"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
     </header>
     <main class="main-content">
-      <section class="merchandise  container">
-        <div class="merchandise__item  merchandise__item--interior">
-          <a class="merchandise__link  merchandise__link--interior" href="interior.html">
-            Предметы интерьера
-            <svg class="merchandise__icon  merchandise__icon--interior" width="41" height="62">
-              <use xlink:href="img/sprite.svg#icon-interior"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="merchandise__item  merchandise__item--toys">
-          <a class="merchandise__link  merchandise__link--toys" href="toys.html">
-            Детские игрушки
-            <svg class="merchandise__icon  merchandise__icon--toy" width="61" height="61">
-              <use xlink:href="img/sprite.svg#icon-toy"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
       <section class="featured-product  container">
         <div class="featured-product__top">
           <h2 class="featured-product__heading">Товар недели</h2>
