@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header  container" id="anchor-top">
       <div class="page-header__top">
         <nav class="main-nav  main-nav--no-js container">
           <button class="main-nav__toggle">
@@ -223,9 +223,12 @@
       </div>
     </main>
     <footer class="page-footer  container">
-      <div class="page-footer__logo">
-        <img src="http://lorempixel.com/102/34/cats" width="102" height="34" alt="Логотип магазина Мишка">
-      </div>
+      <a href="index.html#anchor-top" class="page-footer__logo-link">
+        <svg class="page-footer__logo-image" width="102" height="34" aria-labelledby="footer-logo">
+          <title id="footer-logo">Магазин вязаных вещей Мишка</title>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <div class="social">
         <a class="social__link  social__link--instagram" href="https://instagram.com">
           <span class="screen-readers-only">Мы в Инстаграме</span>

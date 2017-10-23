@@ -3,7 +3,7 @@
   background-color: #f2f2f2;
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
   display: none;
 }
 
@@ -15,8 +15,16 @@
     padding: 51px 50px 52px 50px;
   }
 
-  .page-footer__logo {
+  .page-footer__logo-link {
     display: inline-block;
+
+    &[href]:hover {
+      fill: #46c1ae;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 }
 
