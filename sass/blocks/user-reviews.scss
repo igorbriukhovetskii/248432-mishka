@@ -96,6 +96,22 @@
   .user-reviews__inner {
     position: relative;
     padding: 65px 45px 97px 45px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 350px;
+      height: 457px;
+      background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/backgrounds/review@2x.jpg");
+        background-size: 350px 457px;
+      }
+    }
   }
 
   .user-reviews__heading {
@@ -165,9 +181,6 @@
 
 @media (min-width: $desktop-width) {
   .user-reviews {
-    width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
     background-size: 1050px 23px;
     background-position-x: 25px;
   }
@@ -178,14 +191,9 @@
     padding: 58px 95px 150px 171px;
 
     &::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
       width: 350px;
       height: 457px;
       background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
-      z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/backgrounds/review@2x.jpg");
