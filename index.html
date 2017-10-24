@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка | Главная страница</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header" id="anchor-top">
       <div class="page-header__top">
-        <nav class="main-nav  main-nav--no-js container">
+        <nav class="main-nav  main-nav--no-js  content-wrapper">
           <button class="main-nav__toggle">
             <svg class="main-nav__icon  main-nav__icon--hamburger" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
@@ -20,7 +21,11 @@
           </button>
           <div class="logo">
             <a class="logo__link">
-              <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+                <img src="img/logo/logo-mobile.svg" alt="Магазин вязаных вещей Мишка">
+              </picture>
             </a>
           </div>
           <ul class="main-nav__items">
@@ -52,70 +57,79 @@
         </nav>
       </div>
       <div class="page-header__bottom">
-        <nav class="secondary-nav">
-          <ul class="secondary-nav__items">
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Новые поступления</a>
-            </li>
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <div class="secondary-nav__delivery">
-            <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
-          </div>
-        </nav>
-        <h1 class="page-header__heading">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+        <div class="content-wrapper">
+          <nav class="secondary-nav">
+            <ul class="secondary-nav__items">
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Новые поступления</a>
+              </li>
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <div class="secondary-nav__delivery">
+              <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
+            </div>
+          </nav>
+          <h1 class="page-header__heading">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+          <section class="merchandise">
+            <div class="merchandise__item  merchandise__item--interior">
+              <a class="merchandise__link  merchandise__link--interior" href="interior.html">
+                Предметы интерьера
+                <svg class="merchandise__icon  merchandise__icon--interior" width="41" height="62">
+                  <use xlink:href="img/sprite.svg#icon-interior"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="merchandise__item  merchandise__item--toys">
+              <a class="merchandise__link  merchandise__link--toys" href="toys.html">
+                Детские игрушки
+                <svg class="merchandise__icon  merchandise__icon--toy" width="61" height="61">
+                  <use xlink:href="img/sprite.svg#icon-toy"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
     </header>
     <main class="main-content">
-      <section class="merchandise  container">
-        <div class="merchandise__item  merchandise__item--interior">
-          <a class="merchandise__link  merchandise__link--interior" href="#">
-            Предметы интерьера
-            <svg class="merchandise__icon  merchandise__icon--interior" width="41" height="62">
-              <use xlink:href="img/sprite.svg#icon-interior"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="merchandise__item  merchandise__item--toys">
-          <a class="merchandise__link  merchandise__link--toys" href="#">
-            Детские игрушки
-            <svg class="merchandise__icon  merchandise__icon--toy" width="61" height="61">
-              <use xlink:href="img/sprite.svg#icon-toy"></use>
-            </svg>
-          </a>
-        </div>
-      </section>
-      <section class="featured-product  container">
-        <div class="featured-product__top">
-          <h2 class="featured-product__heading">Товар недели</h2>
-          <b class="featured-product__name">Вязаные корзинки</b>
-        </div>
-        <div class="featured-product__content">
-          <p class="featured-product__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="featured-product__properties">
-            <tr class="featured-product__property">
-              <td class="featured-product__property-name">Цвет:</td>
-              <td class="featured-product__property-value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="featured-product__property">
-              <td class="featured-product__property-name">Диаметр:</td>
-              <td class="featured-product__property-value">25 см</td>
-            </tr>
-            <tr class="featured-product__property">
-              <td class="featured-product__property-name">Высота:</td>
-              <td class="featured-product__property-value">15 см</td>
-            </tr>
-          </table>
-          <p class="featured-product__price">
-            Цена: 990 руб.
-          </p>
-          <a class="button  featured-product__button" href="#">Заказать</a>
-          <div class="featured-product__image-wrapper">
-            <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+      <section class="featured-product">
+        <div class="featured-product__inner  container">
+          <div class="featured-product__top">
+            <h2 class="featured-product__heading">Товар недели</h2>
+            <b class="featured-product__name">Вязаные корзинки</b>
+          </div>
+          <div class="featured-product__content">
+            <p class="featured-product__description">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="featured-product__properties">
+              <tr class="featured-product__property">
+                <td class="featured-product__property-name">Цвет:</td>
+                <td class="featured-product__property-value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="featured-product__property">
+                <td class="featured-product__property-name">Диаметр:</td>
+                <td class="featured-product__property-value">25 см</td>
+              </tr>
+              <tr class="featured-product__property">
+                <td class="featured-product__property-name">Высота:</td>
+                <td class="featured-product__property-value">15 см</td>
+              </tr>
+            </table>
+            <p class="featured-product__price">
+              Цена: 990 руб.
+            </p>
+            <a class="button  featured-product__button" href="#">Заказать</a>
+            <div class="featured-product__image-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/content/triple-set-desktop@1x.jpg 1x, img/content/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/triple-set-tablet@1x.jpg 1x, img/content/triple-set-tablet@2x.jpg 2x">
+                <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg"
+                      srcset="img/content/triple-set-mobile@1x.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -160,7 +174,8 @@
           </li>
         </ul>
       </section>
-      <section class="user-reviews  container">
+      <section class="user-reviews">
+        <div class="user-reviews__inner  container">
         <h2 class="user-reviews__heading">Отзывы</h2>
         <p class="user-reviews__review">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
@@ -191,10 +206,11 @@
             </button>
           </div>
         </div>
-        <a class="button  user-reviews__button" href="#">Написать</a>
+        <a class="button  user-reviews__button" href="review.html">Написать</a>
+        </div>
       </section>
       <div class="company-info">
-        <section class="contacts  container">
+        <section class="contacts">
           <h2 class="contacts__heading">
             Контакты
             <svg class="contacts__icon" width="47" height="81">
@@ -213,15 +229,19 @@
               </address>
             </div>
           </div>
-          <a class="button contacts__button" href="#">Напишите нам</a>
+          <a class="button contacts__button" href="contact.html">Напишите нам</a>
         </section>
         <div class="map"></div>
       </div>
     </main>
-    <footer class="page-footer  container">
-      <div class="page-footer__logo">
-        <img src="http://lorempixel.com/102/34/cats" width="102" height="34" alt="Логотип магазина Мишка">
-      </div>
+    <footer class="page-footer">
+      <div class="page-footer__inner  content-wrapper">
+      <a href="index.html#anchor-top" class="page-footer__logo-link">
+        <svg class="page-footer__logo-image" width="102" height="34" aria-labelledby="footer-logo">
+          <title id="footer-logo">Магазин вязаных вещей Мишка</title>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
       <div class="social">
         <a class="social__link  social__link--instagram" href="https://instagram.com">
           <span class="screen-readers-only">Мы в Инстаграме</span>
@@ -250,6 +270,7 @@
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
+      </div>
       </div>
     </footer>
     <div class="modal  container">

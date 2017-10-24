@@ -40,6 +40,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .secondary-nav {
+    width: 1050px;
+  }
+
   .secondary-nav__items {
     display: flex;
     flex-direction: row;

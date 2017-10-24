@@ -1,16 +1,12 @@
 .user-reviews {
+  background: transparent url("../img/backgrounds/bg-zigzag-line.svg") repeat-x bottom;
+  background-size: 320px 7px;
+  background-position-x: 9px;
+}
+
+.user-reviews__inner {
   position: relative;
   padding: 10px 30px 51px 29px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 7px;
-    background: transparent url("../../img/zigzag-line.png") repeat-x bottom;
-  }
 }
 
 .user-reviews__heading {
@@ -93,11 +89,28 @@
 
 @media (min-width: $tablet-width) {
   .user-reviews {
+    background-size: 768px 17px;
+    background-position-x: 19px;
+  }
+
+  .user-reviews__inner {
     position: relative;
     padding: 65px 45px 97px 45px;
 
     &::after {
-      display: none;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 350px;
+      height: 457px;
+      background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/backgrounds/review@2x.jpg");
+        background-size: 350px 457px;
+      }
     }
   }
 
@@ -168,11 +181,25 @@
 
 @media (min-width: $desktop-width) {
   .user-reviews {
-    margin-bottom: 69px;
-    padding-top: 58px;
-    padding-bottom: 150px;
-    padding-left: 221px;
-    background: transparent url("../img/review@1x.jpg") no-repeat 50px 0;
+    background-size: 1050px 23px;
+    background-position-x: 25px;
+  }
+
+  .user-reviews__inner {
+    position: relative;
+    margin-bottom: 70px;
+    padding: 58px 95px 150px 171px;
+
+    &::after {
+      width: 350px;
+      height: 457px;
+      background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/backgrounds/review@2x.jpg");
+        background-size: 350px 457px;
+      }
+    }
   }
 
   .user-reviews__review {
@@ -192,6 +219,7 @@
   }
 
   .user-reviews__button {
+    right: 100px;
     padding-left: 2.24em;
     padding-right: 2.24em;
   }

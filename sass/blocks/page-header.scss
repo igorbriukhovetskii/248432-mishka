@@ -8,7 +8,12 @@
 
 .page-header__bottom {
   border-top: 1px solid $grey;
-  background: #f5f5f5 url("../img/hero-mobile@1x.jpg") no-repeat center -19px;
+  background: #f9f9f9 url("../img/backgrounds/hero-mobile@1x.jpg") no-repeat center -19px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backgrounds/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .page-header__bottom--inner-page {
@@ -21,8 +26,7 @@
   font-family: $font-bold;
   font-size: 27px;
   line-height: 30px;
-  margin: 0;
-  padding: 70px 25px 122px;
+  padding: 52px 15px 104px;
 }
 
 .page-header__heading--inner-page {
@@ -31,7 +35,20 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    position: relative;
     box-shadow: none;
+    margin-bottom: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -14px;
+      width: 100%;
+      height: 24px;
+      background: transparent url("../img/backgrounds/bg-zigzag-fill.svg");
+      background-size: 768px 24px;
+    }
   }
 
   .page-header__top {
@@ -39,45 +56,80 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    box-shadow: inset 0 -1px 0 0 $grey;
   }
 
   .page-header__bottom {
-    padding: 0 49px;
+    padding: 0;
+    background-image: url("../img/backgrounds/hero-tablet@1x.jpg");
+    background-position-y: -2px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
+  .page-header__bottom--inner-page {
+    background: #f1f1f1 none;
   }
 
   .page-header__heading {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 112px;
-    padding-bottom: 373px;
+    margin-bottom: 29px;
+    padding-top: 83px;
+    padding-bottom: 343px;
   }
 
   .page-header__heading--inner-page {
-    padding-top: 53px;
+    padding-top: 25px;
     padding-bottom: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 27px;
+
+    &::after {
+      bottom: -18px;
+      height: 34px;
+      background-size: 1250px 34px;
+    }
+  }
+
+  .page-header--inner-page::after {
+    background-position-x: 0;
+    background-size: 1150px 34px;
+  }
+
   .page-header__bottom {
     min-height: 626px;
+    background-image: url("../img/backgrounds/hero-desktop@1x.jpg");
+    background-size: 1250px 746px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/hero-desktop@2x.jpg");
+    }
   }
 
   .page-header__bottom--inner-page {
     min-height: 254px;
+    background: #f1f1f1 none;
   }
 
   .page-header__heading {
     font-size: 53px;
     line-height: 57px;
     margin-top: 112px;
+    margin-bottom: 359px;
     padding-bottom: 0;
     padding-top: 0;
   }
 
   .page-header__heading--inner-page {
     margin-top: 53px;
+    margin-bottom: 0;
     padding-bottom: 101px;
   }
 }
