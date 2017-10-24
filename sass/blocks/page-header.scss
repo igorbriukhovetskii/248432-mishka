@@ -36,6 +36,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     box-shadow: none;
+    margin-bottom: 30px;
   }
 
   .page-header__top {
@@ -69,7 +70,7 @@
   }
 
   .page-header__heading--inner-page {
-    padding-top: 53px;
+    padding-top: 25px;
     padding-bottom: 80px;
   }
 }
@@ -105,6 +106,7 @@
 
   .page-header__heading--inner-page {
     margin-top: 53px;
+    margin-bottom: 0;
     padding-bottom: 101px;
   }
 }

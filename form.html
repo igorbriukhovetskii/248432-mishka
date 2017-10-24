@@ -6,10 +6,10 @@
     <title>Мишка | Вязание на заказ</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="container">
+  <body>
     <header class="page-header">
       <div class="page-header__top">
-        <nav class="main-nav  main-nav--no-js  container">
+        <nav class="main-nav  main-nav--no-js  content-wrapper">
           <button class="main-nav__toggle">
             <svg class="main-nav__icon  main-nav__icon--hamburger" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-menu-open"></use>
@@ -56,23 +56,25 @@
         </nav>
       </div>
       <div class="page-header__bottom  page-header__bottom--inner-page">
-        <nav class="secondary-nav">
-          <ul class="secondary-nav__items">
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Новые поступления</a>
-            </li>
-            <li class="secondary-nav__item">
-              <a class="link  secondary-nav__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <div class="secondary-nav__delivery">
-            <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
-          </div>
-        </nav>
-        <h1 class="page-header__heading  page-header__heading--inner-page">Вязание на заказ</h1>
+        <div class="content-wrapper">
+          <nav class="secondary-nav">
+            <ul class="secondary-nav__items">
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Новые поступления</a>
+              </li>
+              <li class="secondary-nav__item">
+                <a class="link  secondary-nav__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <div class="secondary-nav__delivery">
+              <a class="link  secondary-nav__link  secondary-nav__link--delivery" href="#">Бесплатная доставка по России</a>
+            </div>
+          </nav>
+          <h1 class="page-header__heading  page-header__heading--inner-page">Вязание на заказ</h1>
+        </div>
       </div>
     </header>
-    <main class="main-content  order">
+    <main class="main-content  order  container">
       <p class="order__intro">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -217,40 +219,42 @@
       </form>
     </main>
     <footer class="page-footer">
-      <a href="index.html" class="page-footer__logo-link">
-        <svg class="page-footer__logo-image" width="102" height="34" aria-labelledby="footer-logo">
-          <title id="footer-logo">Магазин вязаных вещей Мишка</title>
-          <use xlink:href="img/sprite.svg#logo-footer"></use>
-        </svg>
-      </a>
-      <div class="social">
-        <a class="social__link  social__link--instagram" href="https://instagram.com">
-          <span class="screen-readers-only">Мы в Инстаграме</span>
-          <svg class="social__icon  social__icon--instagram" width="22" height="21">
-            <use xlink:href="img/sprite.svg#icon-insta"></use>
+      <div class="page-footer__inner  content-wrapper">
+        <a href="index.html" class="page-footer__logo-link">
+          <svg class="page-footer__logo-image" width="102" height="34" aria-labelledby="footer-logo">
+            <title id="footer-logo">Магазин вязаных вещей Мишка</title>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
-        <a class="social__link  social__link--facebook" href="https://facebook.com">
-          <span class="screen-readers-only">Мы в Фейсбуке</span>
-          <svg class="social__icon  social__icon--facebook" width="15" height="29">
-            <use xlink:href="img/sprite.svg#icon-fb"></use>
-          </svg>
-        </a>
-        <a class="social__link  social__link--twitter" href="https://twitter.com">
-          <span class="screen-readers-only">Мы в Твиттере</span>
-          <svg class="social__icon  social__icon--twitter" width="24" height="20">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__logo" aria-labelledby="academy-title" width="27" height="34">
-            <title id="academy-title">HTML Академия, продвинутый HTML/CSS интенсив</title>
-            <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-          </svg>
-        </a>
+        <div class="social">
+          <a class="social__link  social__link--instagram" href="https://instagram.com">
+            <span class="screen-readers-only">Мы в Инстаграме</span>
+            <svg class="social__icon  social__icon--instagram" width="22" height="21">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+          <a class="social__link  social__link--facebook" href="https://facebook.com">
+            <span class="screen-readers-only">Мы в Фейсбуке</span>
+            <svg class="social__icon  social__icon--facebook" width="15" height="29">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+          <a class="social__link  social__link--twitter" href="https://twitter.com">
+            <span class="screen-readers-only">Мы в Твиттере</span>
+            <svg class="social__icon  social__icon--twitter" width="24" height="20">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__logo" aria-labelledby="academy-title" width="27" height="34">
+              <title id="academy-title">HTML Академия, продвинутый HTML/CSS интенсив</title>
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js" defer></script>

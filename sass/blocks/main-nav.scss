@@ -138,17 +138,18 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: $desktop-width;
+    width: 1050px;
   }
 
   .main-nav__items {
     position: static;
     transform: none;
     order: -1;
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .main-nav__item {
+    margin-right: 33px;
     font-size: 17px;
     box-shadow: inset -1px 0 0 0 $grey;
   }
@@ -158,6 +159,6 @@
   }
 
   .main-nav__link {
-    padding: 1.8em 2.15em 1em 1.95em;
+    padding: 1.8em 2.0em 1em 0;
   }
 }
