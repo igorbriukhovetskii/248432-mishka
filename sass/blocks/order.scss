@@ -91,12 +91,22 @@
   right: 8px;
 }
 
+.order__input-field:hover + .order__icon-phone,
+.order__input-field:focus + .order__icon-phone {
+  fill: $salad;
+}
+
 .order__icon-mail {
   position: absolute;
   width: 32px;
   height: 32px;
   top: 10px;
   right: 4px;
+}
+
+.order__input-field:hover + .order__icon-mail,
+.order__input-field:focus + .order__icon-mail {
+  fill: $salad;
 }
 
 .order__field--color {
