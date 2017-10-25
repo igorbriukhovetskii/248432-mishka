@@ -1730,8 +1730,8 @@ window.googleMapInit = function () {
 
 // Модальное окно заказа товара
 window.modal = function () {
-  if (document.querySelector(".product__add-button")) {
-    var addButtons = document.querySelectorAll(".product__add-button");
+  if (document.querySelector("*[data-action='cart-add']")) {
+    var addButtons = document.querySelectorAll("*[data-action='cart-add']");
     var modal = document.querySelector(".modal");
     var submitButton = modal.querySelector("button[type='submit']");
     var ESC__KEYCODE = 27;
@@ -1778,7 +1778,7 @@ window.modal = function () {
     };
 
     return {
-      initModal: initModal
+      initModal: initModal()
     }
   } else {
     return -1;
@@ -1786,7 +1786,3 @@ window.modal = function () {
 }();
 
 svg4everybody();
-
-if (document.querySelector(".product__add-button")) {
-  window.modal.initModal();
-}
