@@ -5,6 +5,7 @@
   color: inherit;
   font-size: 17px;
   line-height: 18px;
+  outline: none;
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -12,7 +13,8 @@
     line-height: 18px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: inset 0 -2px 0 0 $salad;
   }
 }
@@ -21,7 +23,8 @@
   box-shadow: inset -2px -2px 0 0 $text-dark,
     inset 2px 2px 0 0 $text-dark;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: inset -2px -2px 0 0 $salad,
       inset 2px 2px 0 0 $salad;
   }
