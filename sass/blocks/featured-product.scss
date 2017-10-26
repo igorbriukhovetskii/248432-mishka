@@ -1,11 +1,12 @@
 .featured-product {
   background: transparent url("../img/backgrounds/bg-zigzag-line.svg") repeat-x bottom;
-  background-size: 320px 7px;
   background-position-x: 9px;
+  background-size: 320px 7px;
 }
 
 .featured-product__inner {
   position: relative;
+
   display: flex;
   flex-direction: column;
   padding: 10px 30px 42px 30px;
@@ -18,10 +19,11 @@
 
 .featured-product__heading {
   margin-top: 0;
-  color: $text-green;
-  font-family: $font-bold;
+
   font-size: 17px;
   line-height: 20px;
+  font-family: $font-bold;
+  color: $text-green;
   text-transform: uppercase;
 }
 
@@ -29,10 +31,11 @@
   order: -1;
   margin-top: 17px;
   margin-bottom: 5px;
-  color: $text-dark;
-  font-family: $font-bold;
+
   font-size: 25px;
   line-height: 30px;
+  font-family: $font-bold;
+  color: $text-dark;
 }
 
 .featured-product__content {
@@ -42,20 +45,23 @@
 }
 
 .featured-product__description {
-  font-size: 15px;
-  line-height: 24px;
   margin-top: 9px;
   margin-bottom: 17px;
+
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .featured-product__properties {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 28px;
+
+  border-collapse: collapse;
 }
 
 .featured-product__property {
   height: 40px;
+
   border-bottom: 1px solid $grey;
 }
 
@@ -67,34 +73,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0;
+  order: 1;
   width: 260px;
   height: 315px;
   margin-bottom: 8px;
+
+  font-size: 0;
+
   background-color: $grey;
-  order: 1;
 }
 
 .featured-product__price {
+  order: 2;
   align-self: center;
-  font-family: $font-bold;
+  margin-bottom: 25px;
+
   font-size: 17px;
   line-height: 24px;
-  margin-bottom: 25px;
-  order: 2;
+  font-family: $font-bold;
 }
 
 .featured-product__button {
+  order: 3;
   width: 100%;
   padding-top: 0.8em;
   padding-bottom: 0.85em;
-  order: 3;
 }
 
 @media (min-width: $tablet-width) {
   .featured-product {
-    background-size: 768px 17px;
     background-position-x: 19px;
+    background-size: 768px 17px;
   }
 
   .featured-product__inner {
@@ -110,6 +119,7 @@
   .featured-product__heading {
     width: 100px;
     margin: 29px 16px auto auto;
+
     font-size: 17px;
     line-height: 17px;
     text-align: center;
@@ -122,15 +132,17 @@
 
   .featured-product__content {
     position: relative;
+
+    width: 100%;
     margin-top: 35px;
     padding-right: 380px;
-    width: 100%;
   }
 
   .featured-product__image-wrapper {
     position: absolute;
     top: 17px;
     right: 3px;
+
     width: 333px;
     height: 404px;
   }
@@ -140,10 +152,11 @@
   }
 
   .featured-product__description {
+    align-self: flex-start;
     margin-bottom: 35px;
+
     font-size: 17px;
     line-height: 30px;
-    align-self: flex-start;
     letter-spacing: 0.01em;
   }
 
@@ -153,6 +166,7 @@
 
   .featured-product__price {
     margin-bottom: 34px;
+
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.01em;
@@ -161,21 +175,23 @@
 
 @media (min-width: $desktop-width) {
   .featured-product {
-    background-size: 1050px 23px;
     background-position-x: 25px;
+    background-size: 1050px 23px;
   }
 
   .featured-product__inner {
     position: relative;
+
     margin-bottom: 10px;
     padding-top: 100px;
-    padding-left: 82px;
     padding-bottom: 98px;
+    padding-left: 82px;
   }
 
   .featured-product__top {
-    justify-content: flex-start;
     z-index: 1;
+
+    justify-content: flex-start;
   }
 
   .featured-product__heading {
@@ -185,16 +201,18 @@
   .featured-product__name {
     position: relative;
     bottom: 4px;
+
+    order: 1;
     margin: auto 0;
+
     font-size: 53px;
     line-height: 57px;
-    order: 1;
   }
 
   .featured-product__content {
     display: block;
-    padding-left: 143px;
     padding-right: 585px;
+    padding-left: 143px;
   }
 
   .featured-product__description {
@@ -207,13 +225,15 @@
 
   .featured-product__price {
     margin-bottom: 36px;
+
     text-align: center;
   }
 
   .featured-product__image-wrapper {
-    width: 525px;
-    height: 636px;
     top: -148px;
     right: 2px;
+
+    width: 525px;
+    height: 636px;
   }
 }

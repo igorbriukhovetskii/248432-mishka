@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: $text-dark;
-  font-family: $font-bold;
+
   font-size: 15px;
   line-height: 24px;
+  font-family: $font-bold;
+  color: $text-dark;
 }
 
 .secondary-nav__items {
   display: none;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -51,7 +53,8 @@
   }
 
   .secondary-nav__item {
-    letter-spacing: 0.01em;
     margin-right: 60px;
+
+    letter-spacing: 0.01em;
   }
 }

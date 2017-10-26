@@ -1,18 +1,21 @@
 .button {
   display: inline-block;
   padding: 0.8em 1.5em 0.85em 1.5em;
-  text-align: center;
-  color: $text-grey;
-  font-family: $font-bold;
+
   font-size: 17px;
   line-height: 20px;
+  font-family: $font-bold;
+  text-align: center;
+  color: $text-grey;
   text-transform: uppercase;
-  border: 2px solid $dark-grey;
+
   background: none;
+  border: 2px solid $dark-grey;
   cursor: pointer;
 
   &:hover {
     color: $text-light;
+
     background-color: #444444;
   }
 

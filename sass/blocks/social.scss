@@ -37,17 +37,17 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    min-width: 141px;
     margin-left: 159px;
     padding: 0;
     padding-bottom: 5px;
-    min-width: 141px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social {
-    margin-left: 350px;
     min-width: 142px;
+    margin-left: 350px;
     padding-bottom: 2px;
   }
 }
