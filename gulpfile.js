@@ -16,10 +16,7 @@ var imgmin = require("gulp-imagemin");
 var svgmin = require("gulp-svgmin");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
-
 var rsp = require('remove-svg-properties').stream;
-
-
 
 gulp.task("clean", function () {
   return del("build");
@@ -63,15 +60,6 @@ gulp.task("copy-decor", function () {
   return gulp.src("img/decor/*.{jpg,png,ico,svg}")
     .pipe(gulp.dest("build/img/decor"));
 });
-
-
-// gulp.task('remove-svg-properties', function () {
-//   gulp.src('img/svg/*.svg')
-//     .pipe(rsp.remove({
-//       properties: [rsp.PROPS_FILL]
-//     }))
-//     .pipe(gulp.dest('bui'));
-// });
 
 gulp.task("svg-sprite", function () {
   return gulp.src("img/svg/*.svg")
