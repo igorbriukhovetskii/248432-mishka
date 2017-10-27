@@ -57,12 +57,12 @@
   text-transform: uppercase;
 
   box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.9),
-  inset -2px -2px 0 0 transparentize($text-grey, 0.9);
+    inset -2px -2px 0 0 transparentize($text-grey, 0.9);
   cursor: pointer;
 
   &:hover {
     box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.7),
-    inset -2px -2px 0 0 transparentize($text-grey, 0.7);
+      inset -2px -2px 0 0 transparentize($text-grey, 0.7);
   }
 
   &:active {
@@ -73,7 +73,7 @@
 
 .cart-modal__input:checked + .cart-modal__size-button {
   box-shadow: inset 2px 2px 0 0 $salad,
-  inset -2px -2px 0 0 $salad;
+    inset -2px -2px 0 0 $salad;
 }
 
 .cart-modal__button {
