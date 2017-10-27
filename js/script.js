@@ -1687,7 +1687,7 @@ window.googleMapInit = function () {
   var setMarkers = function () {
     var image = {
       // Адрес иконки маркера
-      url: "img/icon-map-pin.svg",
+      url: "img/decor/icon-map-pin.svg",
       // Размеры маркера
       size: new google.maps.Size(66, 100),
       origin: new google.maps.Point(0, 0),
