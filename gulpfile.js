@@ -63,13 +63,18 @@ gulp.task("copy-decor", function () {
 
 gulp.task("svg-sprite", function () {
   return gulp.src("img/svg/*.svg")
-    .pipe(rsp.remove({
-      properties: [rsp.PROPS_FILL]
-    }))
     .pipe(svgmin())
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("svg-fill-remove", function () {
+  return gulp.src("img/svg/*.svg")
+    .pipe(rsp.remove({
+      properties: [rsp.PROPS_FILL]
+    }))
+    .pipe(gulp.dest("img/svg-fill-removed"));
 });
 
 gulp.task("copy-fonts", function () {
