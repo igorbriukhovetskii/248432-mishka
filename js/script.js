@@ -1746,6 +1746,7 @@ window.modal = function () {
       for (var i = 0; i < addButtons.length; i++) {
         addButtons[i].removeEventListener("click", openModal);
       }
+      submitButton.focus();
     };
 
     // Закрытие модального окна
@@ -1785,6 +1786,9 @@ window.modal = function () {
   }
 }();
 
+
+// Модуль обеспечивает возможность с помощью табуляции перемещаться по кастомным элементам формы,
+// каждый элемент получает состояние фокуса при навигации с помощью клавиатуры
 !function () {
   if (document.querySelector(".order__form")) {
     var checkboxes = document.querySelectorAll("input[type='checkbox']");
@@ -1798,7 +1802,7 @@ window.modal = function () {
     var DOWN_ARROW_KEY_CODE = 40;
     var eventKeyCode;
 
-    var checkBoxFocus = function () {
+    var customElementFocus = function () {
       window.addEventListener("keydown", function (event) {
         eventKeyCode = event.keyCode;
         console.log(eventKeyCode);
@@ -1847,7 +1851,7 @@ window.modal = function () {
         });
       }
     };
-    return checkBoxFocus();
+    return customElementFocus();
   }
 }();
 
