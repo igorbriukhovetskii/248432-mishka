@@ -204,9 +204,10 @@
 
   .user-reviews__inner {
     position: relative;
+    width: 1050px;
 
     margin-bottom: 70px;
-    padding: 58px 95px 150px 171px;
+    padding: 58px 0 150px 171px;
 
     &::after {
       width: 350px;
@@ -238,8 +239,12 @@
     line-height: 24px;
   }
 
+  .user-reviews__pagination {
+    margin-right: 18px;
+  }
+
   .user-reviews__button {
-    right: 100px;
+    right: 0;
 
     padding-right: 2.24em;
     padding-left: 2.24em;
