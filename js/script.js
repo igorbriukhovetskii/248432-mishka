@@ -1746,6 +1746,7 @@ window.modal = function () {
       for (var i = 0; i < addButtons.length; i++) {
         addButtons[i].removeEventListener("click", openModal);
       }
+      submitButton.focus();
     };
 
     // Закрытие модального окна
@@ -1782,6 +1783,75 @@ window.modal = function () {
     }
   } else {
     return -1;
+  }
+}();
+
+
+// Модуль обеспечивает возможность с помощью табуляции перемещаться по кастомным элементам формы,
+// каждый элемент получает состояние фокуса при навигации с помощью клавиатуры
+!function () {
+  if (document.querySelector(".order__form")) {
+    var checkboxes = document.querySelectorAll("input[type='checkbox']");
+    var radioButtons = document.querySelectorAll("input[type='radio']");
+    var radioLabel = document.querySelectorAll(".order__label--radio");
+    var checkboxFocusClass = "order__tick--focused";
+    var SPACE_KEY_CODE = 32;
+    var LEFT_ARROW_KEY_CODE =37;
+    var UP_ARROW_KEY_CODE = 38;
+    var RIGHT_ARROW_KEY_CODE = 39;
+    var DOWN_ARROW_KEY_CODE = 40;
+    var eventKeyCode;
+
+    var customElementFocus = function () {
+      window.addEventListener("keydown", function (event) {
+        eventKeyCode = event.keyCode;
+        console.log(eventKeyCode);
+      });
+
+      for (var a = 0; a < radioLabel.length; a++) {
+        radioLabel[a].addEventListener("mouseup", function (event) {
+          console.log(event.target.previousElementSibling);
+          var ss = event.target.previousElementSibling;
+          ss.style.position = "absolute";
+        })
+      }
+
+      for (var j = 0; j < radioButtons.length; j++) {
+        radioButtons[j].addEventListener("change", function (event) {
+          console.log(eventKeyCode);
+          if (eventKeyCode === LEFT_ARROW_KEY_CODE
+            || eventKeyCode === RIGHT_ARROW_KEY_CODE
+            || eventKeyCode === UP_ARROW_KEY_CODE
+            || eventKeyCode === DOWN_ARROW_KEY_CODE) {
+            event.target.focus();
+            eventKeyCode = null;
+          } else {
+            event.target.blur();
+          }
+        });
+      }
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener("focus", function (event) {
+          event.target.parentNode.classList.toggle(checkboxFocusClass);
+        });
+
+        checkboxes[i].addEventListener("change", function (event) {
+          console.log(eventKeyCode);
+          if (eventKeyCode === SPACE_KEY_CODE) {
+            event.target.focus();
+            eventKeyCode = null;
+          } else {
+            event.target.blur();
+          }
+        });
+
+        checkboxes[i].addEventListener("blur", function (event) {
+          event.target.parentNode.classList.toggle(checkboxFocusClass);
+        });
+      }
+    };
+    return customElementFocus();
   }
 }();
 
