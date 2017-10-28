@@ -173,6 +173,10 @@
   }
 }
 
+.order__radio:focus + .order__label--radio::after {
+  border-color: $salad;
+}
+
 .order__radio:checked + .order__label--radio::after {
   background: radial-gradient(circle at center, $salad 7px, transparent 8px);
 }
@@ -403,6 +407,10 @@
   .order__tick {
     width: 54px;
     height: 52px;
+  }
+
+  .order__tick--focused {
+    border-color: $salad;
   }
 
   .order__icon-tick {
