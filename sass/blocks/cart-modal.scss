@@ -1,32 +1,36 @@
 .cart-modal {
   position: relative;
-  display: block;
   top: 50%;
-  transform: translateY(-50%);
+
+  display: block;
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+
   background-color: #ffffff;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  transform: translateY(-50%);
 }
 
 .cart-modal__heading {
   display: block;
   margin-top: 31px;
   margin-bottom: 13px;
-  color: $text-dark;
-  font-family: $font-bold;
+
   font-size: 25px;
   line-height: 30px;
-  text-transform: uppercase;
+  font-family: $font-bold;
   text-align: center;
+  color: $text-dark;
+  text-transform: uppercase;
 }
 
 .cart-modal__action {
   display: block;
   margin-top: 0;
   margin-bottom: 24px;
+
   font-size: 15px;
   line-height: 30px;
   text-align: center;
@@ -36,8 +40,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 31px;
   width: 100%;
+  margin-bottom: 31px;
 }
 
 .cart-modal__size-button {
@@ -46,13 +50,15 @@
   align-items: center;
   width: 82px;
   padding: 1.06em 1em;
-  font-family: $font-bold;
+
   font-size: 17px;
   line-height: 16px;
+  font-family: $font-bold;
   text-transform: uppercase;
-  cursor: pointer;
+
   box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.9),
     inset -2px -2px 0 0 transparentize($text-grey, 0.9);
+  cursor: pointer;
 
   &:hover {
     box-shadow: inset 2px 2px 0 0 transparentize($text-grey, 0.7),
@@ -73,9 +79,11 @@
 .cart-modal__button {
   width: 100%;
   margin-bottom: 41px;
-  border-color: transparent;
-  background-color: $salad;
+
   color: #ffffff;
+
+  background-color: $salad;
+  border-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,12 +95,14 @@
   .cart-modal__heading {
     margin-top: 34px;
     margin-bottom: 13px;
+
     font-size: 30px;
     line-height: 57px;
   }
 
   .cart-modal__action {
     margin-bottom: 21px;
+
     font-size: 17px;
   }
 

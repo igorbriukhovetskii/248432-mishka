@@ -1,5 +1,6 @@
 .product {
   margin-bottom: 30px;
+
   box-shadow: inset 1px 1px 0 0 #eeeeee,
     inset -1px -1px 0 0 #eeeeee;
 
@@ -13,12 +14,14 @@
 }
 
 .product__image-wrapper {
-  font-size: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 260px;
   height: 195px;
+
+  font-size: 0;
+
   background-color: #e5e6e8;
 }
 
@@ -30,39 +33,43 @@
   display: inline-block;
   margin-top: 0;
   margin-bottom: 5px;
-  color: $text-dark;
-  font-family: $font-bold;
+
   font-size: 17px;
   line-height: 24px;
+  font-family: $font-bold;
+  color: $text-dark;
   letter-spacing: 0.01em;
 }
 
 .product__size {
+  margin-top: 0;
+
   font-size: 13px;
   line-height: 30px;
-  margin-top: 0;
 }
 
 .product__order {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0 27px;
   margin: 0 27px 0 28px;
+  padding: 22px 0 27px;
+
   border-top: 1px solid #ededed;
 }
 
 .product__price {
-  color: $text-dark;
-  font-family: $font-bold;
   font-size: 15px;
   line-height: 24px;
+  font-family: $font-bold;
+  color: $text-dark;
 }
 
 .product__add-button {
-  padding: 0;
-  margin: 0;
   width: 21px;
   height: 19px;
+  margin: 0;
+  padding: 0;
+
   background: transparent;
   border: none;
   cursor: pointer;
@@ -73,8 +80,9 @@
 }
 
 .product__add-button:hover .product__icon {
-  fill: $salad;
   opacity: 1;
+
+  fill: $salad;
 }
 
 .product__add-button:active .product__icon {
@@ -120,6 +128,7 @@
   .product__price {
     margin-top: auto;
     padding-left: 3px;
+
     font-size: 17px;
   }
 }

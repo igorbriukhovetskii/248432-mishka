@@ -1,5 +1,6 @@
 .company-info {
   position: relative;
+
   display: block;
   margin-bottom: 39px;
   padding-bottom: 52px;
@@ -18,8 +19,8 @@
     flex-direction: row;
     width: $desktop-width;
     margin: 0 auto;
+    padding-right: 51px;
     padding-bottom: 66px;
     padding-left: 49px;
-    padding-right: 51px;
   }
 }

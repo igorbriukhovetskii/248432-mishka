@@ -1,43 +1,48 @@
 .user-reviews {
   background: transparent url("../img/backgrounds/bg-zigzag-line.svg") repeat-x bottom;
-  background-size: 320px 7px;
   background-position-x: 9px;
+  background-size: 320px 7px;
 }
 
 .user-reviews__inner {
   position: relative;
+
   padding: 10px 30px 51px 29px;
 }
 
 .user-reviews__heading {
-  color: $text-dark;
-  font-family: $font-bold;
+  margin-top: 12px;
+
   font-size: 25px;
   line-height: 30px;
-  margin-top: 12px;
+  font-family: $font-bold;
+  color: $text-dark;
 }
 
 .user-reviews__review {
   margin-top: 24px;
   margin-bottom: 27px;
   padding-left: 1px;
+
   font-size: 15px;
   line-height: 30px;
 }
 
 .user-reviews__user-name {
-  color: $text-dark;
-  font-family: $font-bold;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
   margin-top: 27px;
   margin-bottom: 3px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $font-bold;
+  color: $text-dark;
+  letter-spacing: 0.01em;
 }
 
 .user-reviews__user-mail {
   margin-top: 0;
   margin-bottom: 29px;
+
   font-size: 17px;
   line-height: 30px;
 }
@@ -50,8 +55,10 @@
 
 .user-reviews__pagination-button {
   position: relative;
+
   width: 50%;
   height: 52px;
+
   background: none;
   border: 1px solid $grey;
   cursor: pointer;
@@ -68,6 +75,7 @@
 .user-reviews__icon {
   position: absolute;
   top: 12px;
+
   width: 51px;
   height: 26px;
 }
@@ -84,27 +92,31 @@
   width: 100%;
   padding-top: 0.8em;
   padding-bottom: 0.85em;
+
   letter-spacing: 0.03em;
 }
 
 @media (min-width: $tablet-width) {
   .user-reviews {
-    background-size: 768px 17px;
     background-position-x: 19px;
+    background-size: 768px 17px;
   }
 
   .user-reviews__inner {
     position: relative;
+
     padding: 65px 45px 97px 45px;
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
+
       width: 350px;
       height: 457px;
+
       background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -116,6 +128,7 @@
 
   .user-reviews__heading {
     margin-bottom: 49px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -123,6 +136,7 @@
   .user-reviews__review {
     margin-bottom: 57px;
     padding-left: 4px;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -139,9 +153,10 @@
   }
 
   .user-reviews__user-name {
-    font-size: 18px;
     margin: 0;
     margin-bottom: 4px;
+
+    font-size: 18px;
   }
 
   .user-reviews__user-mail {
@@ -151,8 +166,8 @@
   .user-reviews__pagination {
     width: 139px;
     margin-top: 2px;
-    margin-left: auto;
     margin-right: 23px;
+    margin-left: auto;
   }
 
   .user-reviews__pagination-button {
@@ -171,9 +186,11 @@
     position: absolute;
     top: 79px;
     right: 50px;
+
     width: auto;
-    padding-left: 2.25em;
     padding-right: 2.25em;
+    padding-left: 2.25em;
+
     font-size: 17px;
     letter-spacing: normal;
   }
@@ -181,18 +198,20 @@
 
 @media (min-width: $desktop-width) {
   .user-reviews {
-    background-size: 1050px 23px;
     background-position-x: 25px;
+    background-size: 1050px 23px;
   }
 
   .user-reviews__inner {
     position: relative;
+
     margin-bottom: 70px;
     padding: 58px 95px 150px 171px;
 
     &::after {
       width: 350px;
       height: 457px;
+
       background: #ededed url("../img/backgrounds/review@1x.jpg") no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -214,13 +233,15 @@
 
   .user-reviews__user-name {
     margin-bottom: 2px;
+
     font-size: 17px;
     line-height: 24px;
   }
 
   .user-reviews__button {
     right: 100px;
-    padding-left: 2.24em;
+
     padding-right: 2.24em;
+    padding-left: 2.24em;
   }
 }

@@ -1,18 +1,19 @@
 .contacts {
+  width: 320px;
+  margin-right: auto;
   margin-bottom: 37px;
   margin-left: auto;
-  margin-right: auto;
-  width: 320px;
   padding: 10px 30px 0 29px;
 }
 
 .contacts__heading {
   margin-top: 25px;
   margin-bottom: 26px;
-  color: $text-dark;
-  font-family: $font-bold;
+
   font-size: 18px;
   line-height: 30px;
+  font-family: $font-bold;
+  color: $text-dark;
 }
 
 .contacts__icon {
@@ -20,9 +21,9 @@
 }
 
 .contacts__info {
+  border-collapse: collapse;
   font-size: 15px;
   line-height: 30px;
-  border-collapse: collapse;
 }
 
 .contacts__info-block {
@@ -42,15 +43,18 @@
 
 .contacts__mail-link {
   position: relative;
+
   color: $text-grey;
 
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     bottom: -0.2em;
     left: 0;
+
     width: 100%;
     height: 1px;
+
     background-color: #62d1ba;
   }
 
@@ -64,16 +68,19 @@
 }
 
 .contacts__value--address {
-  padding-left: 2px;
   padding-right: 20px;
+  padding-left: 2px;
+
   font-style: normal;
 }
 
 .contacts__button {
   position: absolute;
   bottom: 0;
-  padding-left: 2.95em;
+
   padding-right: 2.95em;
+  padding-left: 2.95em;
+
   letter-spacing: 0.04em;
 }
 
@@ -88,24 +95,30 @@
 
   .contacts__heading {
     position: relative;
+
     margin-bottom: 50px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__icon {
     position: absolute;
-    display: block;
     top: -14px;
     right: 23px;
+
+    display: block;
     width: 47px;
     height: 81px;
+
+    fill: $salad;
   }
 
   .contacts__info {
     display: flex;
     flex-direction: row;
     padding-left: 4px;
+
     font-size: 17px;
   }
 
@@ -133,10 +146,13 @@
   .contacts__button {
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-    padding-left: 2.25em;
+
     padding-right: 2.3em;
+    padding-left: 2.25em;
+
     letter-spacing: normal;
+
+    transform: translateX(-50%);
   }
 }
 
@@ -144,8 +160,8 @@
   .contacts {
     width: 350px;
     margin-top: 62px;
-    margin-left: 64px;
     margin-right: 111px;
+    margin-left: 64px;
     padding: 0;
     padding-left: 106px;
 
@@ -158,6 +174,7 @@
   .contacts__heading {
     margin-top: 9px;
     margin-bottom: 48px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -171,8 +188,8 @@
   .contacts__info {
     flex-wrap: wrap;
     min-width: 330px;
-    padding-left: 6px;
     margin-bottom: 51px;
+    padding-left: 6px;
   }
 
   .contacts__info-block {
@@ -185,7 +202,9 @@
 
   .contacts__button {
     position: static;
-    transform: none;
+
     margin-left: 6px;
+
+    transform: none;
   }
 }
