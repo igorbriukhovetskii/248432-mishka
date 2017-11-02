@@ -4,11 +4,11 @@
   box-shadow: inset 1px 1px 0 0 #eeeeee,
     inset -1px -1px 0 0 #eeeeee;
 
-  &:hover {
+  &:hover .product__content-wrapper {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active .product__content-wrapper {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
